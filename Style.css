@@ -1,0 +1,134 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Main Container */
+section {
+    background-color: white;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left; /* Align content to the left for a more formal feel */
+    margin-top: 30px;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Ensures the header is centered */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Increased size for prominence */
+    margin: 0;
+}
+
+header p {
+    margin: 1rem 0 0;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+}
+
+/* Section Titles */
+h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Adjusted font size for clarity */
+    font-weight: 600;
+}
+
+/* List Items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e7f7e7;
+    margin-bottom: 0.75rem; /* Increased margin for better spacing */
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem; /* Larger text for readability */
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Definition List */
+dl {
+    margin-top: 1.5rem;
+}
+
+dl dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+    font-size: 1.2rem; /* Slightly larger font for definition terms */
+}
+
+dl dd {
+    margin-left: 1.5rem;
+    color: #666;
+    font-size: 1.1rem; /* Slightly larger font for definitions */
+}
+
+/* Blockquote */
+#quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4CAF50;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    font-size: 1.2rem; /* Larger font for the quote */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    ul li {
+        padding: 0.8rem;
+    }
+}
