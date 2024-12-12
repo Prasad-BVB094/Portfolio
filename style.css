@@ -10,10 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f0f4f8; /* Light, soft background color */
     margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligns content towards the top */
+    align-items: flex-start;
     min-height: 100vh;
 }
 
@@ -26,7 +26,7 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+    margin-top: 30px;
 }
 
 /* Header */
@@ -49,7 +49,7 @@ header p {
 
 /* Section Titles */
 h2 {
-    color: #2d87f0; /* Matching the header's soft blue for consistency */
+    color: #2d87f0; /* Matching the header's soft blue */
     margin-bottom: 1rem;
 }
 
