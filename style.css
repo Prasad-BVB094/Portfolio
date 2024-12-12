@@ -8,12 +8,12 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f0f4f8; /* Light, soft background color */
     margin: 0;
-    padding: 20px;
+    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /* Aligns content towards the top */
     min-height: 100vh;
 }
 
@@ -25,36 +25,32 @@ section {
     max-width: 800px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: left; /* Align content to the left for a more formal feel */
-    margin-top: 30px;
+    text-align: center;
+    margin-top: 30px; /* Adding margin to ensure there's space from the top */
 }
 
 /* Header */
 header {
-    background-color: #4CAF50;
+    background-color: #2d87f0; /* Soft blue for the header */
     color: white;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
-    text-align: center; /* Ensures the header is centered */
 }
 
 header h1 {
-    font-size: 2.5rem; /* Increased size for prominence */
+    font-size: 2rem;
     margin: 0;
 }
 
 header p {
     margin: 1rem 0 0;
-    font-size: 1.2rem; /* Slightly larger font for better readability */
 }
 
 /* Section Titles */
 h2 {
-    color: #4CAF50;
+    color: #2d87f0; /* Matching the header's soft blue for consistency */
     margin-bottom: 1rem;
-    font-size: 1.5rem; /* Adjusted font size for clarity */
-    font-weight: 600;
 }
 
 /* List Items */
@@ -64,16 +60,15 @@ ul {
 }
 
 ul li {
-    background-color: #e7f7e7;
-    margin-bottom: 0.75rem; /* Increased margin for better spacing */
-    padding: 1rem;
+    background-color: #e8f1f9; /* Soft light blue background for list items */
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
     border-radius: 5px;
-    font-size: 1.1rem; /* Larger text for readability */
 }
 
 /* Links */
 a {
-    color: #4CAF50;
+    color: #2d87f0; /* Soft blue for links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -83,31 +78,24 @@ a:hover {
 }
 
 /* Definition List */
-dl {
-    margin-top: 1.5rem;
-}
-
 dl dt {
     font-weight: bold;
     color: #333;
     margin-top: 1rem;
-    font-size: 1.2rem; /* Slightly larger font for definition terms */
 }
 
 dl dd {
     margin-left: 1.5rem;
     color: #666;
-    font-size: 1.1rem; /* Slightly larger font for definitions */
 }
 
 /* Blockquote */
-#quote {
+blockquote {
     font-style: italic;
     color: #555;
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #2d87f0; /* Soft blue border */
     padding-left: 1rem;
     margin-top: 2rem;
-    font-size: 1.2rem; /* Larger font for the quote */
 }
 
 /* Responsive Design */
@@ -118,17 +106,5 @@ dl dd {
 
     header {
         padding: 1.5rem;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    ul li {
-        padding: 0.8rem;
     }
 }
