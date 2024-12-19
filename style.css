@@ -1,110 +1,110 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f4f8; /* Light, soft background color */
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Menu Bar */
+nav {
+    background-color: #004080;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
 }
 
-/* Main Container */
-section {
-    background-color: white;
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 30px;
+.menu li {
+    margin: 0 15px;
 }
 
-/* Header */
-header {
-    background-color: #2d87f0; /* Soft blue for the header */
+.menu li a {
     color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #002050;
+}
+
+/* Header Content */
+header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2rem;
-    margin: 0;
+    margin: 10px 0;
+    color: #004080;
 }
 
 header p {
-    margin: 1rem 0 0;
+    margin: 10px 0;
+    color: #555;
 }
 
-/* Section Titles */
+/* Section Content */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 h2 {
-    color: #2d87f0; /* Matching the header's soft blue */
-    margin-bottom: 1rem;
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
 }
 
-/* List Items */
 ul {
-    list-style: none;
-    padding: 0;
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
-ul li {
-    background-color: #e8f1f9; /* Soft light blue background for list items */
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-}
-
-/* Links */
-a {
-    color: #2d87f0; /* Soft blue for links */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Definition List */
 dl dt {
     font-weight: bold;
-    color: #333;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 dl dd {
-    margin-left: 1.5rem;
-    color: #666;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
-/* Blockquote */
-blockquote {
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #2d87f0; /* Soft blue border */
-    padding-left: 1rem;
-    margin-top: 2rem;
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
-    }
-
-    header {
-        padding: 1.5rem;
-    }
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
