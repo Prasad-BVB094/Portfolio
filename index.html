@@ -11,8 +11,15 @@
     <nav>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="daa.html">DAA </a></li>
-            <!-- Add more links as new pages are created -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">DAA</a>
+                <ul class="dropdown-content">
+                    <li><a href="intro.html">Introduction</a></li>
+                    <li><a href="project.html">Course Project Introduction</a></li>
+                    <li><a href="reflection.html">Reflection on Course</a></li>
+                    <li><a href="problem.html">Reflections on Problem Solving</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <header class="intro">
@@ -35,22 +42,26 @@
         <ul>
             <li><a href="https://github.com/your-github-Prasad-BVB094" target="_blank">GitHub</a></li>
         </ul>
-        <h2>Portfolio Topic</h2>
-        <dl>
-            <dt>Course Name</dt>
-            <dd>Design and Analysis of Algorithms</dd>
-            <dt>Course Code</dt>
-            <dd>24ECSC205</dd>
-            <dt>Name</dt>
-            <dd>Prasad Morab</dd>
-            <dt>SRN</dt>
-            <dd>01FE23BCS094</dd>
-            <dt>Course Instructor</dt>
-            <dd>Mr. Mallikarjun Akki</dd>
-            <dt>University</dt>
-            <dd>KLE Technological University</dd>
-        </dl>
     </section>
     <footer></footer>
+
+    <script>
+        // JavaScript to handle dropdown menu on click
+        const dropbtn = document.querySelector(".dropbtn");
+        const dropdownContent = document.querySelector(".dropdown-content");
+
+        dropbtn.addEventListener("click", function() {
+            dropdownContent.classList.toggle("show");
+        });
+
+        // Close the dropdown menu if the user clicks anywhere outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                if (dropdownContent.classList.contains('show')) {
+                    dropdownContent.classList.remove('show');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
