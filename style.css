@@ -16,14 +16,14 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    text-align: center;
 }
 
 .menu {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
 }
 
 .menu li {
@@ -43,20 +43,20 @@ nav {
     background-color: #002050;
 }
 
-/* Header */
-header {
+/* Intro Section */
+header.intro {
     text-align: center;
     padding: 20px 10px;
-    background-color: #f4f4f4;
+    background-color: #d5f5d5; /* Light green shade */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
+header.intro h1 {
     margin: 10px 0;
     color: #004080;
 }
 
-header p {
+header.intro p {
     margin: 10px 0;
     color: #555;
 }
@@ -101,10 +101,8 @@ p {
 
 /* Footer */
 footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
+    background-color: transparent;
     padding: 10px 0;
     margin-top: 20px;
-    font-size: 0.9rem;
+    text-align: center;
 }
