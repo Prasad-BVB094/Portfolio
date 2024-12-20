@@ -8,60 +8,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
-        <ul class="menu">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">DAA</a>
-                <ul class="dropdown-content">
-                    <li><a href="intro.html">Introduction</a></li>
+                <a href="daa.html" class="dropdown-toggle">DAA</a>
+                <ul class="dropdown-menu">
                     <li><a href="project.html">Course Project Introduction</a></li>
-                    <li><a href="reflection.html">Reflection on Course</a></li>
-                    <li><a href="problem.html">Reflections on Problem Solving</a></li>
+                    <li><a href="reflectiononcourse.html">Reflection on Course</a></li>
+                    <li><a href="reflectiononproblem.html">Reflection on Problem Solving Skills</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
-    <header class="intro">
-        <h1>Hello, I'm Prasad 👋</h1>
-        <p>I am passionate about technology and problem-solving. Here's a glimpse of my work:</p>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hello, I'm [Your Name] 👋</h1>
+        <p>Welcome to my portfolio! Explore my projects, skills, and reflections on Design and Analysis of Algorithms.</p>
     </header>
+
+    <!-- Main Content Section -->
     <section>
         <h2>🛠 Projects</h2>
         <ul>
-            <li><strong>Project 1</strong>:.</li>
-            <li><strong>Project 2</strong>:.</li>
+            <li><strong>Project 1</strong>: A brief description of your project.</li>
+            <li><strong>Project 2</strong>: A brief description of another project.</li>
         </ul>
+
         <h2>🚀 Skills</h2>
         <ul>
-            <li>C, C++, Python</li>
+            <li>C++, Python, JavaScript</li>
             <li>Data Structures and Algorithms</li>
-            <li>Data Science enthusiast</li>
+            <li>Web Development</li>
         </ul>
+
         <h2>🌐 Find Me Online</h2>
         <ul>
-            <li><a href="https://github.com/your-github-Prasad-BVB094" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/your-github-username" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
         </ul>
+
+        <h2>Portfolio Topic</h2>
+        <dl>
+            <dt>Course Name</dt>
+            <dd>Algorithmic Problem Solving</dd>
+
+            <dt>Course Code</dt>
+            <dd>Course Code Placeholder</dd>
+
+            <dt>Name</dt>
+            <dd>Your Name</dd>
+
+            <dt>SRN</dt>
+            <dd>Your SRN</dd>
+
+            <dt>Course Instructor</dt>
+            <dd>Instructor Name Placeholder</dd>
+
+            <dt>University</dt>
+            <dd>Your University Name</dd>
+
+            <dt>Portfolio Topic/Domain</dt>
+            <dd>Google</dd>
+        </dl>
+
+        <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
     </section>
-    <footer></footer>
 
     <script>
-        // JavaScript to handle dropdown menu on click
-        const dropbtn = document.querySelector(".dropbtn");
-        const dropdownContent = document.querySelector(".dropdown-content");
-
-        dropbtn.addEventListener("click", function() {
-            dropdownContent.classList.toggle("show");
+        // JavaScript for dropdown toggle
+        document.querySelectorAll('.dropdown-toggle').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const dropdownMenu = item.nextElementSibling;
+                dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                e.preventDefault(); // Prevent default link behavior
+            });
         });
-
-        // Close the dropdown menu if the user clicks anywhere outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                if (dropdownContent.classList.contains('show')) {
-                    dropdownContent.classList.remove('show');
-                }
-            }
-        }
     </script>
 </body>
 </html>
