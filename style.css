@@ -8,52 +8,19 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #d3d3d3; /* Grey background */
     margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Aligns content towards the top */
-    min-height: 100vh;
-}
-
-/* Main Container */
-section {
-    background-color: white;
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
-}
-
-/* Header */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-header p {
-    margin: 1rem 0 0;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #333;
+    background-color: #00274d; /* Dark blue */
     padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -86,7 +53,7 @@ nav .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #4CAF50;
+    background-color: #004080; /* Darker blue */
     border-radius: 8px;
     padding: 1rem;
     list-style: none;
@@ -100,22 +67,41 @@ nav .dropdown:hover .dropdown-menu {
 
 nav .dropdown-menu li {
     padding: 0.75rem;
-    background-color: #4CAF50;
-    color: white;
 }
 
 nav .dropdown-menu li a {
     color: white;
-    font-weight: normal;
 }
 
 nav .dropdown-menu li a:hover {
     text-decoration: underline;
 }
 
+/* Header */
+header {
+    margin-top: 4rem;
+    text-align: left;
+    background-color: #004080; /* Darker blue */
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Main Section */
+section {
+    background-color: white;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 5rem auto 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
 /* Section Titles */
 h2 {
-    color: #4CAF50;
+    color: #004080; /* Darker blue */
     margin-bottom: 1rem;
 }
 
@@ -126,7 +112,7 @@ ul {
 }
 
 ul li {
-    background-color: #e7f7e7;
+    background-color: #e0e0ff; /* Light blue */
     margin-bottom: 0.5rem;
     padding: 0.75rem;
     border-radius: 5px;
@@ -134,46 +120,25 @@ ul li {
 
 /* Links */
 a {
-    color: #4CAF50;
+    color: #004080; /* Darker blue */
     text-decoration: none;
-    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Definition List */
-dl dt {
-    font-weight: bold;
-    color: #333;
-    margin-top: 1rem;
-}
-
-dl dd {
-    margin-left: 1.5rem;
-    color: #666;
-}
-
 /* Blockquote */
 blockquote {
     font-style: italic;
     color: #555;
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #004080; /* Darker blue */
     padding-left: 1rem;
     margin-top: 2rem;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
-    }
-
-    header {
-        padding: 1.5rem;
-    }
-
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -182,5 +147,9 @@ blockquote {
     nav ul li {
         margin-right: 0;
         margin-bottom: 1rem;
+    }
+
+    header {
+        text-align: center;
     }
 }
