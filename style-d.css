@@ -10,7 +10,7 @@ body {
 
 /* Navigation Menu */
 nav {
-    background-color: #003d80; /* Slightly darker than header */
+    background-color: #004a99; /* Slightly darker blue than the header */
     width: 100%;
     padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f0f0f0; /* Brighter font color for better contrast */
+    color: #f0f0f0; /* Light font color */
     text-decoration: none;
     padding: 15px 20px;
     display: inline-block;
@@ -38,17 +38,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #002966; /* Slightly darker shade for hover effect */
+    background-color: #003d80; /* Slightly darker hover color */
 }
 
 nav ul li a.active {
-    background-color: #002966; /* Indicate active page */
+    background-color: #003d80; /* Active state color */
     font-weight: bold;
 }
 
 /* Header Styles */
 header {
-    background-color: #0056b3; /* Slightly lighter than nav bar */
+    background-color: #0056b3; /* Blue background for header */
     color: #fff;
     padding: 20px;
     text-align: center;
