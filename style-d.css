@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaeaea; /* Light grey background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #0056b3; /* Darker blue background */
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    background-color: #003d80; /* Slightly darker shade of blue */
+}
+
+nav ul li a.active {
+    background-color: #003d80; /* Indicate active page */
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    background-color: #0056b3; /* Darker blue background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #d9d9d9; /* Light grey text */
+}
+
+/* Section Styles */
+section {
+    background-color: #ffffff; /* White background for sections */
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Headings */
+section h2 {
+    color: #0056b3; /* Darker blue for headings */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+/* List Styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1em;
+    color: #555; /* Darker grey for text */
+}
+
+/* Links */
+a {
+    color: #0056b3; /* Darker blue for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    background: #f2f4f7;
+    padding: 15px;
+    border-left: 5px solid #0056b3;
+    margin: 20px 0;
+    color: #555;
+}
