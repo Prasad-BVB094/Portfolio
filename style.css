@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #eaeaea; /* Light grey background */
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,65 +10,72 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #007bff; /* Blue background */
+    background-color: #0056b3; /* Darker blue background */
     color: #fff;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-weight: 600;
     margin: 0;
+    font-size: 2.2em;
 }
 
 header p {
-    margin: 5px 0 0;
+    margin: 10px 0 0;
     font-size: 1.2em;
+    color: #d9d9d9; /* Light grey text */
 }
 
 /* Section Styles */
 section {
     background-color: #ffffff; /* White background for sections */
     margin: 20px;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Headings */
+/* Section Headings */
 section h2 {
-    color: #007bff;
+    color: #0056b3; /* Darker blue for headings */
     margin-bottom: 15px;
+    font-size: 1.8em;
 }
 
 /* List Styles */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 ul li {
     padding: 8px 0;
     font-size: 1em;
+    color: #555; /* Darker grey for text */
 }
 
 /* Definition List */
 dl {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 dt {
     font-weight: bold;
     margin-top: 10px;
+    color: #0056b3; /* Darker blue */
 }
 
 dd {
     margin-left: 20px;
+    color: #333;
 }
 
 /* Links */
 a {
-    color: #007bff;
+    color: #0056b3; /* Darker blue for links */
     text-decoration: none;
     font-weight: 500;
 }
@@ -77,21 +84,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Blockquote */
-blockquote {
-    font-style: italic;
-    background: #f8f9fa;
-    padding: 15px;
-    border-left: 4px solid #007bff;
-    margin: 20px 0;
-    color: #555;
-}
-
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #0056b3; /* Darker blue */
     color: white;
     font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
