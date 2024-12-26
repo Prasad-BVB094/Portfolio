@@ -10,7 +10,7 @@ body {
 
 /* Navigation Menu */
 nav {
-    background-color: #004080; /* Darker blue background */
+    background-color: #0066cc; /* Slightly darker blue */
     width: 100%;
     padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f9f9f9; /* Brighter font color */
+    color: #f0f0f0; /* Light font color */
     text-decoration: none;
     padding: 15px 20px;
     display: inline-block;
@@ -38,11 +38,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #003366; /* Slightly darker shade of blue */
+    background-color: #005bb5; /* Slightly darker blue for hover */
 }
 
 nav ul li a.active {
-    background-color: #003366; /* Indicate active page */
+    background-color: #005bb5; /* Slightly darker blue for active */
     font-weight: bold;
 }
 
