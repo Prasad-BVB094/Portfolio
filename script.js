@@ -1,10 +1,18 @@
 // Smooth scrolling when clicking navigation links
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', event => {
-        event.preventDefault(); // Prevent default anchor behavior
-        const targetId = link.getAttribute('href').substring(1); // Get the target section ID
-        const targetSection = document.getElementById(targetId); // Find the target section
-        targetSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the section
+        const href = link.getAttribute('href');
+
+        // Check if the link is pointing to a section on the same page
+        if (href.startsWith('#')) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const targetId = href.substring(1); // Get the target section ID
+            const targetSection = document.getElementById(targetId); // Find the target section
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the section
+            }
+        }
+        // If it's a link to another page, do not prevent default
     });
 });
 
