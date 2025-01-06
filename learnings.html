@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnings</title>
+    <link rel="stylesheet" href="style-l.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo" style="height: 50px;"> <!-- Adjust height as needed -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="daa-introduction.html">DAA Introduction</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="learnings.html" class="active">Learnings</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Course Learning Reflections</h1>
+    </div>
+    <!-- Main Container -->
+    <div class="container">
+
+        <section id="section1" class="collapsible">
+            <h2 class="question">1. What are the kinds of problems we see in nature? (Iteration, Recursion, Backtracking)</h2>
+            <div class="answer">
+                <p>Problems in nature can be categorized based on how they are solved:</p>
+                <ul>
+                    <li><strong>Iteration</strong> involves repeating a block of code multiple times. Examples include summing an array and looping through a list.</li>
+                    <li><strong>Recursion</strong> is when a function calls itself to solve a smaller instance of the problem. Examples include tree traversals and factorial computation.</li>
+                    <li><strong>Backtracking</strong> explores all possibilities and reverts when constraints are violated. Examples include solving a maze and the N-Queens problem.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section2" class="collapsible">
+            <h2 class="question">2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.</h2>
+            <div class="answer">
+                <p><strong>Time complexity</strong> measures how fast an algorithm runs, while <strong>space complexity</strong> measures the amount of memory used.</p>
+                <p>Efficiency is important because it helps in selecting the right algorithm for large datasets. Poor efficiency can make an algorithm impractical for large inputs.</p>
+                <p>Different classes of problems grow at different rates:</p>
+                <ul>
+                    <li><strong>Constant time (O(1))</strong>: Hashing, Lookup Table</li>
+                    <li><strong>Logarithmic time (O(log n))</strong>: Binary Search</li>
+                    <li><strong>Linear time (O(n))</strong>: Linear Search</li>
+                    <li><strong>Linearithmic time (O(n log n))</strong>: Quick Sort, Merge Sort</li>
+                    <li><strong>Quadratic time (O(n²))</strong>: Bubble Sort, Selection Sort</li>
+                    <li><strong>Exponential time (O(2ⁿ))</strong>: Backtracking algorithms like N-Queens</li>
+                    <li><strong>Factorial time (O(n!))</strong>: Brute Force solutions like the Traveling Salesman Problem</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section3" class="collapsible">
+            <h2 class="question">3. What are the key takeaways from different design principles?</h2>
+            <div class="answer">
+                <ul>
+                    <li><strong>Divide and Conquer</strong> breaks a problem into smaller subproblems, solves them recursively, and combines the results. Examples include <strong>Merge Sort</strong> and <strong>Quick Sort</strong>.</li>
+                    <li>The <strong>Greedy approach</strong> makes the best choice at each step to build an optimal solution. Examples include <strong>Kruskal’s Algorithm</strong> and <strong>Prim’s Algorithm</strong>.</li>
+                    <li><strong>Dynamic Programming</strong> stores past results to avoid recomputation, improving efficiency. Examples include <strong>Bellman-Ford</strong> and <strong>Floyd-Warshall</strong> algorithms.</li>
+                    <li><strong>Backtracking</strong> systematically explores all possibilities and backtracks when necessary. It is used in problems like <strong>N-Queens</strong> and <strong>Sudoku solvers</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section4" class="collapsible">
+            <h2 class="question">4. What is hierarchical data and how do different tree data structures optimize problem scenarios?</h2>
+            <div class="answer">
+                <p><strong>Hierarchical data</strong> structures allow efficient searching, sorting, and indexing.</p>
+                <ul>
+                    <li><strong>Binary Search Trees (BST)</strong> allow fast searching, insertion, and deletion with an average time complexity of <strong>O(log n)</strong>.</li>
+                    <li><strong>AVL Trees</strong> are self-balancing versions of BSTs, ensuring that operations remain efficient by keeping the tree height minimal.</li>
+                    <li><strong>2-3 Trees</strong> are multi-way balanced trees that reduce tree height further for better efficiency.</li>
+                    <li><strong>Red-Black Trees</strong> are another self-balancing BST, commonly used in standard libraries like <strong>STL `map`</strong> and <strong>set</strong>.</li>
+                    <li><strong>Heaps</strong> provide an efficient way to manage priority-based retrieval operations. They are used in <strong>priority queues</strong> and <strong>heap sort</strong>.</li>
+                    <li><strong>Tries</strong> are specialized trees for storing strings efficiently. They are used in applications like <strong>autocomplete</strong> and <strong>spell-checking</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section5" class="collapsible">
+            <h2 class="question">5. What is the need for array query algorithms, and what are their applications and principles?</h2>
+            <div class="answer">
+                <p><strong>Array query algorithms</strong> help in answering range queries efficiently. These are useful in scenarios like financial data analysis, leaderboards, and cumulative frequency calculations.</p>
+                <ul>
+                    <li><strong>Fenwick Trees</strong> allow efficient prefix sum queries and updates in logarithmic time.</li>
+                    <li><strong>Sparse Tables</strong> precompute results to enable fast range queries, useful when the array is static.</li>
+                    <li><strong>Segment Trees</strong> support both range queries and updates, making them useful in competitive programming and real-time applications.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section6" class="collapsible">
+            <h2 class="question">6. What is the difference between trees and graphs, and what are their traversals and applications?</h2>
+            <div class="answer">
+                <p><strong>Trees</strong> are hierarchical structures where nodes are connected in a parent-child relationship, and cycles do not exist. They are used in <strong>file systems</strong> and <strong>database indexing</strong>.</p>
+                <p><strong>Graphs</strong> are more general structures where nodes can be connected in any manner. They can have cycles and can be directed or undirected. Graphs are used in <strong>road networks</strong>, <strong>social networks</strong>, and <strong>recommendation systems</strong>.</p>
+                <p><strong>Tree traversals</strong> include <strong>Preorder</strong>, <strong>Inorder</strong>, and <strong>Postorder</strong>, commonly used in expression trees and hierarchical data processing.</p>
+                <p><strong>Graph traversals</strong> include <strong>Depth-First Search (DFS)</strong> and <strong>Breadth-First Search (BFS)</strong>, used in applications like <strong>maze solving</strong> and <strong>shortest path finding</strong>.</p>
+            </div>
+        </section>
+
+        <section id="section7" class="collapsible">
+            <h2 class="question">7. What are sorting and searching algorithms, and how do they relate to real-world applications?</h2>
+            <div class="answer">
+                <p><strong>Sorting algorithms</strong> help arrange data in a meaningful order, improving efficiency in searching and data retrieval.</p>
+                <ul>
+                    <li><strong>Bubble Sort</strong> and <strong>Selection Sort</strong> are simple but inefficient sorting methods used in small datasets.</li>
+                    <li><strong>Quick Sort</strong> and <strong>Merge Sort</strong> are efficient divide-and-conquer algorithms used in large-scale sorting applications.</li>
+                    <li><strong>Heap Sort</strong> is a priority-based sorting method used in <strong>scheduling</strong> and <strong>ranking systems</strong>.</li>
+                </ul>
+                <p><strong>Searching algorithms</strong> help locate specific data efficiently.</p>
+                <ul>
+                    <li><strong>Linear Search</strong> is straightforward but inefficient for large datasets.</li>
+                    <li><strong>Binary Search</strong> is much faster but requires sorted data. It is used in <strong>databases</strong> and <strong>dictionary lookups</strong>.</li>
+                    <li>Graph-based searches like <strong>Dijkstra’s Algorithm</strong> are used in <strong>GPS navigation</strong> and <strong>network routing</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section8" class="collapsible">
+            <h2 class="question">8. Why are graph algorithms important for spanning trees and shortest paths?</h2>
+            <div class="answer">
+                <p><strong>Spanning tree algorithms</strong> help find the minimum-cost connection of all nodes in a graph.</p>
+                <ul>
+                    <li><strong>Kruskal’s Algorithm</strong> is used when edges are sorted, making it useful for sparse graphs.</li>
+                    <li><strong>Prim’s Algorithm</strong> is more efficient for dense graphs.</li>
+                </ul>
+                <p><strong>Shortest path algorithms</strong> help find the most efficient route in a network.</p>
+                <ul>
+                    <li><strong>Dijkstra’s Algorithm</strong> is useful for finding the shortest path from a single source to all other nodes.</li>
+                    <li><strong>Floyd-Warshall Algorithm</strong> is used for computing shortest paths between all pairs of nodes in a graph.</li>
+                </ul>
+                <p>Graph algorithms are widely used in <strong>network design</strong>, <strong>routing protocols</strong>, and <strong>transportation systems</strong>.</p>
+            </div>
+        </section>
+
+        <section id="section9" class="collapsible">
+            <h2 class="question">9. What are the different studied algorithm design techniques?</h2>
+            <div class="answer">
+                <ul>
+                    <li><strong>Brute Force algorithms</strong> try all possible solutions and are often inefficient, like <strong>Bubble Sort</strong> and <strong>Naïve String Matching</strong>.</li>
+                    <li><strong>Divide and Conquer</strong> breaks problems into smaller parts, processes them recursively, and combines results. Examples include <strong>Quick Sort</strong> and <strong>Merge Sort</strong>.</li>
+                    <li><strong>Greedy algorithms</strong> make optimal choices at each step, useful in problems like <strong>Dijkstra’s Algorithm</strong> and <strong>Huffman Coding</strong>.</li>
+                    <li><strong>Dynamic Programming</strong> stores and reuses previously computed results, improving efficiency in problems like <strong>Floyd-Warshall Algorithm</strong>.</li>
+                    <li><strong>Backtracking</strong> explores multiple solutions recursively and backtracks when needed, used in problems like <strong>N-Queens</strong> and <strong>Sudoku solvers</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section10" class="collapsible">
+            <h2 class="question">10. How do you determine the most efficient approach when solving a complex problem?</h2>
+            <div class="answer">
+                <p>The most efficient approach is determined by analyzing the problem constraints, expected input size, and available resources. Understanding the <strong>time</strong> and <strong>space complexity</strong> of different algorithms helps in choosing the best one.</p>
+            </div>
+        </section>
+
+        <section id="section11" class="collapsible">
+            <h2 class="question">11. Reflect on a situation where you needed to balance multiple conflicting constraints in a design. What approach did you take?</h2>
+            <div class="answer">
+                <p>When dealing with limited memory and high-speed requirements, I prioritized <strong>space-efficient algorithms</strong> over brute force methods. For example, I used <strong>Fenwick Trees</strong> instead of direct summation for range queries to balance efficiency and memory usage.</p>
+            </div>
+        </section>
+
+        <section id="section12" class="collapsible">
+            <h2 class="question">12. What criteria do you use to evaluate the effectiveness of a solution?</h2>
+            <div class="answer">
+                <p>Effectiveness is evaluated based on <strong>time complexity</strong>, <strong>space efficiency</strong>, <strong>scalability</strong>, <strong>correctness</strong>, and <strong>ease of implementation</strong>.</p>
+            </div>
+        </section>
+
+        <section id="section13" class="collapsible">
+            <h2 class="question">13. How can you adapt an existing solution to address a new or unforeseen challenge?</h2>
+            <div class="answer">
+                <p>By analyzing the core principles of the existing solution and modifying specific parts, an algorithm can be adapted to new constraints. For example, modifying <strong>Dijkstra’s Algorithm</strong> to handle <strong>negative weights</strong> by switching to <strong>Bellman-Ford Algorithm</strong>.</p>
+            </div>
+        </section>
+
+        <section id="section14" class="collapsible">
+            <h2 class="question">14. What strategies do you use to identify patterns or structures in complex datasets or problems?</h2>
+            <div class="answer">
+                <p>Observing input-output relationships, analyzing frequency distributions, and visualizing data structures help identify patterns.</p>
+            </div>
+        </section>
+
+        <section id="section15" class="collapsible">
+            <h2 class="question">15. How do you decide when to prioritize simplicity over optimization in a solution?</h2>
+            <div class="answer">
+                <p><strong>Simplicity</strong> is prioritized when working with small datasets or when readability and maintainability are important. <strong>Optimization</strong> is prioritized when performance is critical, such as in real-time systems.</p>
+            </div>
+        </section>
+
+        <section id="section16" class="collapsible">
+            <h2 class="question">16. How does breaking down a problem into smaller components help solve it effectively?</h2>
+            <div class="answer">
+                <p>Dividing a problem into smaller parts makes it easier to understand, debug, and optimize. It aligns with design principles like <strong>Divide and Conquer</strong> and <strong>Modular Programming</strong>.</p>
+            </div>
+        </section>
+
+        <section id="section17" class="collapsible">
+            <h2 class="question">17. What are the trade-offs while choosing between different approaches to solve a problem?</h2>
+            <div class="answer">
+                <p>Trade-offs involve balancing <strong>time complexity</strong>, <strong>space usage</strong>, <strong>ease of implementation</strong>, and <strong>scalability</strong>.</p>
+            </div>
+        </section>
+
+        <section id="section18" class="collapsible">
+            <h2 class="question">18. How do you identify and address potential limitations or weaknesses in a proposed solution?</h2>
+            <div class="answer">
+                <p>Testing edge cases, analyzing worst-case scenarios, and profiling performance help in identifying weaknesses. Adjustments can be made accordingly to improve performance or handle larger datasets.</p>
+            </div>
+        </section>
+
+        <section id="section19" class="collapsible">
+            <h2 class="question">19. How can applying knowledge from one context help solve a problem in another?</h2>
+            <div class="answer">
+                <p>Algorithms and data structures are often universal. For example, concepts learned in <strong>tree structures</strong> can be applied to <strong>database indexing</strong> or <strong>file systems</strong>.</p>
+            </div>
+        </section>
+
+        <section id="section20" class="collapsible">
+            <h2 class="question">20. How do you decide when to innovate versus relying on tried-and-tested solutions?</h2>
+            <div class="answer">
+                <p>Innovation is considered when existing solutions cannot meet new constraints or requirements. Tried-and-tested solutions are preferred when they are effective and reliable for the problem at hand.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
