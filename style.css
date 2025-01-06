@@ -11,7 +11,7 @@ body {
 
 /* Navigation Menu */
 .navbar {
-    background-color: #0056b3; /* Lighter blue for the navbar */
+    background-color: #001F3F; /* Lighter blue for the navbar */
     width: 100%;
     padding: 15px 20px; /* Increased padding for better spacing */
     display: flex; /* Use flexbox for alignment */
@@ -35,7 +35,7 @@ body {
 }
 
 .nav-links a {
-    color: #f0f0f0; /* Light font color */
+    color: #ffffff; /* Light font color */
     text-decoration: none;
     padding: 10px 15px; /* Adjust padding for links */
     transition: background-color 0.3s, color 0.3s;
@@ -54,22 +54,23 @@ body {
 .hero {
     text-align: center;
     padding: 80px 20px; /* Increased padding for better visibility */
-    background-color: #009688; /* Softer teal color for the hero section */
-    color: #fff; /* White text for contrast */
+    background-image: url('hero.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: #ffffff; /* Change text color to white for better contrast */
     margin-top: -10px; /* Remove space between navbar and hero section */
 }
 
 /* Hero Section Text */
 .hero h1 {
-    color: #fff; /* Ensure the main heading is white */
+    color: #ffffff; /* Ensure the main heading is white */
     font-size: 36px; /* Larger font size for the main heading */
 }
 
 .hero p {
-    color: #fff; /* Change the color of the paragraph to white */
+    color: #ffffff; /* Change the color of the paragraph to white */
     font-size: 20px; /* Font size for the paragraph */
 }
-
 /* Main Container */
 .container {
     max-width: 800px; /* Set a max width for the container */
@@ -111,7 +112,7 @@ p, ul li, dd {
     font-family: 'Lato', sans-serif; /* Use Lato for body text */
     font-size: 20px; /* Set font size for body text */
     font-weight: 400; /* Regular weight */
-    color: #555; /* Darker grey for text */
+    color: #000000; /* Darker grey for text */
 }
 
 /* List Styles */
@@ -144,7 +145,7 @@ dd {
 
 /* Links */
 a {
-    color: #ff5722; /* Use a vibrant accent color for links */
+    color: #0059ff; /* Use a vibrant accent color for links */
     text-decoration: none;
     font-weight: 500; /* Medium */
     font-family: 'Lato', sans-serif;
