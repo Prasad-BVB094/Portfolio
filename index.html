@@ -8,9 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo" style="height: 50px;"> <!-- Adjust height as needed -->
+        </div>
+        <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="daa-introduction.html">DAA Introduction</a></li>
             <li><a href="project.html">Project</a></li>
@@ -18,61 +21,66 @@
         </ul>
     </nav>
 
-    <!-- Header Section -->
-    <header>
+    <!-- Hero Section -->
+    <div class="hero">
         <h1>Hello, I'm Prasad 👋</h1>
         <p>I am passionate about technology and problem-solving. Here's a glimpse of my work:</p>
-    </header>
+    </div>
 
-    <!-- Projects Section -->
-    <section>
-        <h2>🛠 Projects</h2>
-        <ul>
-            <li><strong>Project 1</strong>: </li>
-            <li><strong>Project 2</strong>: </li>
-        </ul>
-    </section>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Projects Section -->
+        <section id="section1">
+            <h2>🛠 Projects</h2>
+            <ul>
+                <li><strong>Project 1</strong>: </li>
+                <li><strong>Project 2</strong>: </li>
+            </ul>
+        </section>
 
-    <!-- Skills Section -->
-    <section>
-        <h2>🚀 Skills</h2>
-        <ul>
-            <li>C, C++, Python</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Data Science enthusiast</li>
-        </ul>
-    </section>
+        <!-- Skills Section -->
+        <section id="section2">
+            <h2>🚀 Skills</h2>
+            <ul>
+                <li>C, C++, Python</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Data Science enthusiast</li>
+            </ul>
+        </section>
 
-    <!-- Find Me Online Section -->
-    <section>
-        <h2>🌐 Find Me Online</h2>
-        <ul>
-            <li><a href="https://github.com/Prasad-BVB094">GitHub</a></li>
-        </ul>
-    </section>
+        <!-- Find Me Online Section -->
+        <section id="section3">
+            <h2>🌐 Find Me Online</h2>
+            <ul>
+                <li><a href="https://github.com/Prasad-BVB094">GitHub</a></li>
+            </ul>
+        </section>
 
-    <!-- Portfolio Details Section -->
-    <section>
-        <h2>📜 Portfolio Topic</h2>
-        <dl>
-            <dt>Course Name</dt>
-            <dd>Design and Analysis of Algorithms</dd>
+        <!-- Portfolio Details Section -->
+        <section>
+            <h2>📜 Portfolio Topic</h2>
+            <dl>
+                <dt>Course Name</dt>
+                <dd>Design and Analysis of Algorithms</dd>
 
-            <dt>Course Code</dt>
-            <dd>24ECSC205</dd>
+                <dt>Course Code</dt>
+                <dd>24ECSC205</dd>
 
-            <dt>Name</dt>
-            <dd>Prasad Morab</dd>
+                <dt>Name</dt>
+                <dd>Prasad Morab</dd>
 
-            <dt>SRN</dt>
-            <dd>01FE23BCS094</dd>
+                <dt>SRN</dt>
+                <dd>01FE23BCS094</dd>
 
-            <dt>Course Instructor</dt>
-            <dd>Instructor Name Placeholder</dd>
+                <dt>Course Instructor</dt>
+                <dd>Instructor Name Placeholder</dd>
 
-            <dt>University</dt>
-            <dd>KLE Technological University</dd>
-        </dl>
-    </section>
+                <dt>University</dt>
+                <dd>KLE Technological University</dd>
+            </dl>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
