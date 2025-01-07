@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Description</title>
+    <link rel="stylesheet" href="style-des.css"> <!-- Link to style-d.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Healthcare Management System Logo" style="height: 50px;"> <!-- Adjust height as needed -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="daa-introduction.html">DAA Introduction</a></li>
+            <li>
+                <a href="project.html">Course Project</a>
+                <ul class="dropdown">
+                    <li><a href="whitepaper.html">White Paper Summary</a></li>
+                    <li><a href="description.html" class="active">Project Description</a></li>
+                    <li><a href="code.html">Project Coding</a></li>
+                </ul>
+            </li>
+            <li><a href="learnings.html">Learnings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Healthcare Management System</h1>
+        <p>Optimizing Healthcare Operations for Enhanced Patient Care</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>The Healthcare Management System (HMS) is a sophisticated software application designed to optimize various aspects of healthcare operations. It encompasses critical functionalities such as resource allocation, emergency response, appointment scheduling, and inventory management. By employing efficient algorithms and data structures, the HMS ensures that resources are allocated effectively, emergency incidents are prioritized correctly, appointments are scheduled optimally, and inventory is managed in a streamlined manner. The system is designed to be scalable and adaptable, making it suitable for a wide range of healthcare environments, from small clinics to large hospitals. The HMS aims to enhance patient care, improve operational efficiency, and facilitate better decision-making in healthcare settings.</p>
+        </section>
+
+        <!-- Sub-Projects Overview Section -->
+        <section id="sub-projects-overview">
+            <h2>2. Sub-Projects Overview</h2>
+            <p>The HMS consists of four interrelated sub-projects, each addressing a specific aspect of healthcare management. These sub-projects work together to create a comprehensive system that enhances operational efficiency and improves patient care.</p>
+
+            <h2>2.1 Healthcare Resource Allocation System</h2>
+            <h3>Objective</h3>
+            <p>The primary objective of the Healthcare Resource Allocation System is to efficiently allocate healthcare resources, such as hospital beds, medical staff, and equipment, based on real-time demand and availability.</p>
+            <h3>Key Algorithms Used</h3>
+            <ul>
+                <li><strong>Dijkstra’s Algorithm:</strong> Used to calculate the shortest path between healthcare facilities and patients.</li>
+                <li><strong>Linear Search:</strong> Applied to check resource availability across various healthcare facilities.</li>
+                <li><strong>Priority Queue (Min-Heap):</strong> Employed to prioritize resource allocation based on urgency.</li>
+                <li><strong>Union-Find:</strong> Efficiently manages groups of resources that need to be allocated together.</li>
+            </ul>
+
+            <h2>2.2 Emergency Medical Incident Categorization System</h2>
+            <h3>Objective</h3>
+            <p>The Emergency Medical Incident Categorization System aims to categorize and prioritize emergency medical incidents based on their urgency and severity.</p>
+            <h3>Key Algorithms Used</h3>
+            <ul>
+                <li><strong>Rabin-Karp Algorithm:</strong> Used for string matching in incident reports.</li>
+                <li><strong>Quick Sort:</strong> Employed to sort incidents by urgency and severity.</li>
+                <li><strong>Heap Sort:</strong> Utilized for efficiently managing and retrieving the highest priority incidents.</li>
+                <li><strong>Graph Traversal Algorithms:</strong> Used to analyze the network of emergency services and optimize response times.</li>
+            </ul>
+
+            <h2>2.3 Appointment Scheduling System</h2>
+            <h3>Objective</h3>
+            <p>The Appointment Scheduling System is designed to streamline the process of booking and managing patient appointments with healthcare providers.</p>
+            <h3>Key Algorithms Used</h3>
+            <ul>
+                <li><strong>Backtracking Algorithm:</strong> Used to find optimal scheduling solutions while avoiding conflicts.</li>
+                <li><strong>Greedy Algorithm:</strong> Employed to allocate time slots based on patient needs and provider availability.</li>
+                <li><strong>Binary Search:</strong> Applied to quickly find available time slots in a sorted list.</li>
+            </ul>
+
+            <h2>2.4 Inventory Management System</h2>
+            <h3>Objective</h3>
+            <p>The Inventory Management System focuses on tracking and managing medical supplies and equipment within healthcare facilities.</p>
+            <h3>Key Algorithms Used</h3>
+            <ul>
+                <li><strong>Hashing:</strong> Used for quick access to inventory items based on unique identifiers.</li>
+                <li><strong>Dynamic Programming:</strong> Employed to optimize stock levels and reorder points based on usage patterns.</li>
+                <li><strong>Linear Programming:</strong> Utilized for cost minimization in inventory management.</li>
+            </ul>
+        </section>
+
+        <!-- Future Enhancements Section -->
+        <section id="future-enhancements">
+            <h2>3. Future Enhancements</h2>
+            <p>Future enhancements for the Healthcare Management System may include the integration of machine learning algorithms for predictive analytics, improved user interfaces for better user experience, and enhanced security measures to protect patient data. Additionally, expanding the system to support telemedicine functionalities could further improve patient care and accessibility.</p>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion">
+            <h2>4. Conclusion</h2>
+            <p>The Healthcare Management System represents a significant advancement in the optimization of healthcare operations. By leveraging efficient algorithms and data structures, the HMS enhances patient care, improves operational efficiency, and supports better decision-making in healthcare environments. The integration of various sub-projects creates a comprehensive solution that addresses the diverse needs of healthcare providers and patients alike.</p>
+        </section>
+    </div>
+
+    <!-- PDF Section Container -->
+    <div class="pdf-section">
+        <section class="pdf-viewer">
+            <h2>📄 View the report of Inventory Management System</h2>
+            <iframe src="dsa-project-report-118.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            <p>
+                <button class="fullscreen-btn">View Fullscreen</button>
+            </p>
+        </section>
+        <section class="pdf-download">
+            <h2>📥 Download the report of Inventory Management System</h2>
+            <p>
+                <a href="dsa-project-report-118.pdf" download>
+                    <button class="download-btn">Report of Inventory Management System</button>
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <div class="pdf-section">
+        <section class="pdf-viewer">
+            <h2>📄 View the report of Appointment Scheduling System</h2>
+            <iframe src="dsa-project-report-120.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            <p>
+                <button class="fullscreen-btn">View Fullscreen</button>
+            </p>
+        </section>
+        <section class="pdf-download">
+            <h2>📥 Download the report of Appointment Scheduling System</h2>
+            <p>
+                <a href="dsa-project-report-120.pdf" download>
+                    <button class="download-btn">Report of Appointment Scheduling System</button>
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <div class="pdf-section">
+        <section class="pdf-viewer">
+            <h2>📄 View the report of Emergency Medical Incident Categorization System</h2>
+            <iframe src="dsa-project-report-137(1).pdf" width="100%" height="600px" style="border: none;"></iframe>
+            <p>
+                <button class="fullscreen-btn">View Fullscreen</button>
+            </p>
+        </section>
+        <section class="pdf-download">
+            <h2>📥 Download the report of Emergency Medical Incident Categorization System</h2>
+            <p>
+                <a href="dsa-project-report-137(1).pdf" download>
+                    <button class="download-btn">Report of Emergency Medical Incident Categorization System</button>
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <div class="pdf-section">
+        <section class="pdf-viewer">
+            <h2>📄 View the report of Healthcare Resource Allocation System</h2>
+            <iframe src="dsa-project-report-140[1].pdf" width="100%" height="600px" style="border: none;"></iframe>
+            <p>
+                <button class="fullscreen-btn">View Fullscreen</button>
+            </p>
+        </section>
+        <section class="pdf-download">
+            <h2>📥 Download the report of Healthcare Resource Allocation System</h2>
+            <p>
+                <a href="dsa-project-report-140[1].pdf" download>
+                    <button class="download-btn">Report of Healthcare Resource Allocation System</button>
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Prasad Morab. All rights reserved.</p>
+    </footer>
+    <script src="script22.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

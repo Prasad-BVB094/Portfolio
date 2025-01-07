@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Prasad Morab, showcasing projects and skills in technology and problem-solving.">
+    <meta name="keywords" content="Portfolio, Prasad Morab, Technology, Problem Solving, Projects, Skills">
+    <title>Course Project</title>
+    <link rel="stylesheet" href="style-p.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo of Prasad Morab" style="height: 50px;"> <!-- Adjust height as needed -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="daa-introduction.html">DAA Introduction</a></li>
+                <li>
+                    <a href="project.html" class="active">Course Project</a>
+                    <ul class="dropdown">
+                        <li><a href="whitepaper.html">White Paper Summary</a></li>
+                        <li><a href="description.html">Project Description</a></li>
+                        <li><a href="code.html">Project Coding</a></li>
+                    </ul>
+                </li>
+                <li><a href="learnings.html">Learnings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Healthcare Management System (HMS)</h1>
+        <p>This project optimizes healthcare operations using efficient algorithms and data structures.</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>📋 Introduction</h2>
+            <p>The Healthcare Management System (HMS) is a project that uses efficient algorithms and data structures to optimize healthcare operations. In a city, the health of citizens matters the most, so this project was chosen despite many other possible problem areas. HMS addresses four key areas:</p>
+            <ul>
+                <li><strong>Emergency Incident Categorization –</strong> Categorizing and prioritizing medical emergencies.</li>
+                <li><strong>Patient Appointment Scheduling –</strong> Scheduling appointments for patients efficiently.</li>
+                <li><strong>Medical Supply Inventory Management –</strong> Tracking and restocking of medical supplies.</li>
+                <li><strong>Healthcare Resource Allocation –</strong> Optimizing the critical distribution of healthcare resources.</li>
+            </ul>
+            <p>HMS is built using algorithms like Dijkstra's Algorithm, Rabin-Karp string matching, QuickSort, Depth First Search, Priority Queues, Binary Search Tree (BST), and Union-Find to improve efficiency in real-time decision-making.</p>
+            <p>The project is based on fundamental algorithmic problem-solving and data structures, referenced from textbooks such as Data Structures and Algorithm Analysis in C++ by Weiss and Introduction to Algorithms by Cormen et al.</p>
+        </section>
+        <!-- Team Details Section -->
+        <section id="team-details">
+            <h2>Team Details</h2>
+            <table>
+                <tr>
+                    <th>Sl. No.</th>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>Business case</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>118</td>
+                    <td>Prasad Morab</td>
+                    <td>Medical Supply Inventory Management</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>120</td>
+                    <td>Prasanna Anagal</td>
+                    <td>Patient Appointment Scheduling</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>137</td>
+                    <td>Siddharth Prabhu</td>
+                    <td>Emergency Incident Categorization</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>140</td>
+                    <td>Shashank Joshi</td>
+                    <td>Healthcare Resource Allocation</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Problem Statement Section -->
+        <section id="problem-statement">
+            <h2>📝 Problem Statement</h2>
+            <h3>3.1 Domain</h3>
+            <p>The HMS automates healthcare operations such as incident management, patient scheduling, resource allocation, and inventory management. These tasks suffer from inefficiencies and delays, leading to poor service quality and increased costs. The objective of HMS is to resolve these challenges by providing an algorithm-driven, scalable, and user-friendly solution.</p>
+            
+            <h3>3.2 Module Description</h3>
+            <p>The Medical Supply Inventory Management System ensures efficient tracking and restocking of essential medical supplies. It optimizes inventory management using hashing, tree-based search, and sorting techniques, ensuring smooth operations in hospitals and healthcare centers.</p>
+            <h3>Key Algorithms Used:</h3>
+            <ul>
+                <li><strong>Hashing –</strong> Enables quick lookup of inventory items.</li>
+                <li><strong>Binary Search Tree (BST) –</strong> Organizes inventory for efficient searches and updates.</li>
+                <li><strong>Selection Sort –</strong> Prioritizes items for restocking based on demand and urgency.</li>
+            </ul>
+        </section>
+
+        <!-- Functionality Selection Section -->
+        <section id="functionality-selection">
+            <h2>Functionality Selection</h2>
+            <table>
+                <tr>
+                    <th>Sl. No.</th>
+                    <th>Functionality Name</th>
+                    <th>Known</th>
+                    <th>Unknown</th>
+                    <th>Principles Applicable</th>
+                    <th>Algorithms</th>
+                    <th>Data Structures</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Inventory Lookup</td>
+                    <td>Each medical supply item has a unique identifier. Lookup needs to be quick.</td>
+                    <td>Need an efficient way to store and retrieve inventory items in constant time.</td>
+                    <td>Hashing Principles</td>
+                    <td>Hashing</td>
+                    <td>Hash Tables</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Inventory Organization</td>
+                    <td>Supplies should be stored in a structured manner for efficient searches and updates.</td>
+                    <td>Large datasets require a structured format to avoid slow lookup times.</td>
+                    <td>Binary Search Trees</td>
+                    <td>Binary Search Tree (BST)</td>
+                    <td>Trees</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Restocking Prioritization</td>
+                    <td>Some supplies are more critical than others and should be restocked first.</td>
+                    <td>Sorting should be efficient and prioritize high-usage items.</td>
+                    <td>Selection Approach</td>
+                    <td>Selection Sort</td>
+                    <td>Arrays</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Functionality Analysis Section -->
+        <section id=" functionality-analysis">
+            <h2>🔍 Functionality Analysis</h2>
+            <h3>5.1 Inventory Lookup (Hashing)</h3>
+            <p><strong>Workflow:</strong> Each inventory item is assigned a unique key using a hash function. Items are stored in a hash table for fast access. When checking stock, the system retrieves the item in O(1) average time.</p>
+            <p><strong>Efficiency:</strong> Time Complexity: O(1) (average case), O(n) (worst case with collisions). Space Complexity: O(n) for storing items in the hash table.</p>
+
+            <h3>5.2 Inventory Organization (Binary Search Tree - BST)</h3>
+            <p><strong>Workflow:</strong> Inventory items are stored in a BST, sorted by name or ID. Search, insert, and delete operations are performed efficiently. The tree remains balanced for optimal performance.</p>
+            <p><strong>Efficiency:</strong> Time Complexity: O(log n) (balanced BST), O(n) (worst case). Space Complexity: O(n).</p>
+
+            <h3>5.3 Restocking Prioritization (Selection Sort)</h3>
+            <p><strong>Workflow:</strong> Items are sorted based on urgency and demand using Selection Sort. The highest-priority items are identified for restocking. The sorted order ensures critical items are replenished first.</p>
+            <p><strong>Efficiency:</strong> Time Complexity: O(n²). Space Complexity: O(1).</p>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion">
+            <h2>🔚 Conclusion </h2>
+            <p>The Medical Supply Inventory Management System enhances hospital inventory efficiency by ensuring that essential medical supplies are tracked, retrieved, and restocked efficiently.</p>
+            <p>By integrating Hashing for quick lookup, Binary Search Trees (BST) for structured storage, and Selection Sort for prioritization, the system prevents shortages and optimizes supply chain management.</p>
+            <p>This module highlights the importance of efficient data structures in real-world inventory management, where fast access and sorting of critical items are essential.</p>
+        </section>
+
+        <!-- References Section -->
+        <section id="references">
+            <h2>📚 References</h2>
+            <ul>
+                <li>[1] Weiss, Mark Allen. Data Structures and Algorithm Analysis in C++ (4th Edition). Pearson, 2013.</li>
+                <li>[2] Thomas H. Cormen, Clifford Stein, Ronald L. Rivest, and Charles E. Leiserson. Introduction to Algorithms (3rd ed.). The MIT Press, 2009.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Healthcare Management System Project. All rights reserved.</p>
+    </footer>
+    <script src="script2.js"></script> <!-- Link to your script file -->
+</body>
+</html>

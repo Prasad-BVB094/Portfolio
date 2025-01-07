@@ -1,0 +1,251 @@
+/* Global Styling */
+body {
+    font-family: 'Lato', sans-serif; /* Use Lato for body text */
+    background-color: #f9f9f9; /* Light background for better contrast */
+    color: #000000; /* Default text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center; /* Center text for the entire body */
+}
+
+/* Navigation Menu */
+.navbar {
+    background-color: #001F3F; /* Lighter blue for the navbar */
+    width: 100%;
+    padding: 15px 20px; /* Increased padding for better spacing */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and links */
+    position: relative; /* Position relative for dropdown positioning */
+}
+
+.navbar .logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Add margin between links */
+    position: relative; /* Position relative for dropdown */
+}
+
+.nav-links a {
+    color: #ffffff; /* Light font color */
+    text-decoration: none;
+    padding: 10px 15px; /* Adjust padding for links */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #003d80; /* Slightly darker hover color */
+}
+
+.nav-links a.active {
+    background-color: #003d80; /* Active state color */
+    font-weight: bold;
+    border-radius: 5px; /* Add rounded corners for the active link */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position dropdown relative to parent */
+    top: 100%; /* Position below the parent */
+    left: 0; /* Align to the left */
+    background-color: #001F3F; /* Match navbar background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    z-index: 1000; /* Ensure dropdown is above other elements */
+}
+
+.nav-links li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    margin: 0; /* Remove margin for dropdown items */
+}
+
+.dropdown a {
+    padding: 10px 15px; /* Adjust padding for dropdown links */
+    display: block; /* Make links block elements */
+    color: #ffffff; /* Light font color */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.dropdown a:hover {
+    background-color: #003d80; /* Hover color for dropdown items */
+}
+
+/* Optional: Add a slight delay for dropdown visibility */
+.nav-links li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+    animation: fadeIn 0.3s; /* Optional fade-in effect */
+}
+
+/* Optional: Fade-in animation for dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px; /* Increased padding for better visibility */
+    background-image: url('learn.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: bottom; /* Position the image to show the lower part */
+    color: #ffffff; /* Change text color to white for better contrast */
+    margin-top: -10px; /* Remove space between navbar and hero section */
+}
+
+/* Hero Section Text */
+.hero h1 {
+    color: #ffffff; /* Ensure the main heading is white */
+    font-size: 36px; /* Larger font size for the main heading */
+}
+
+.hero p {
+    color: #ffffff; /* Change the color of the paragraph to white */
+    font-size: 20px; /* Font size for the paragraph */
+}
+
+
+/* Main Container */
+.container {
+    max-width: 800px; /* Set a max width for the container */
+    margin: 20px auto; /* Center the container with margin */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Collapsible Section Styles */
+.collapsible {
+    margin: 20px 0; /* Margin to separate sections */
+    border: 1px solid #707070; /* Border for collapsible sections */
+    border-radius: 5px; /* Rounded corners for collapsible sections */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.question {
+    background-color: #f1f1f1; /* Light grey background for questions */
+    padding: 15px; /* Padding for question */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0; /* Remove margin */
+    border: 1px solid #3b3b3b; /* Remove border */
+    border-radius: 5px;
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.question:hover,
+.question.active {
+    background-color: #ebc001; /* Change background color on hover and when active */
+    transform: scale(1.05); /* Slightly enlarge the question section */
+}
+
+.answer {
+    display: none; /* Initially hide answers */
+    padding: 15px; /* Padding for answers */
+    background-color: #f1f1f1; /* White background for answers */
+    text-align: left;
+}
+
+.answer.active {
+    display: block; /* Show answer when active */
+}
+
+/* Section Headings */
+h2 {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for headings */
+    color: #004d40; /* Darker shade of teal for headings */
+    margin-bottom: 10px; /* Margin for spacing */
+    font-size: 30px; /* Set font size for headings */
+    font-weight: bold; /* Bold weight */
+    border-bottom: 2px solid #ddd; /* Added border */
+    padding-bottom: 5px; /* Padding below heading */
+}
+
+/* Body Text */
+p, ul li, dd {
+    font-family: 'Lato', sans-serif; /* Use Lato for body text */
+    font-size: 20px; /* Set font size for body text */
+    font-weight: 400; /* Regular weight */
+    color: #000000; /* Darker grey for text */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+}
+
+ul li {
+    padding: 4px 0; /* Padding for list items */
+}
+
+/* Links */
+a {
+    color: #ff5722; /* Use a vibrant accent color for links */
+    text-decoration: none; /* No underline */
+    font-weight: 500; /* Medium weight */
+    font-family: 'Lato', sans-serif; /* Use Lato for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button Styles */
+.button {
+    background-color: #0056b3; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #003d80; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #001F3F; /* Dark background to match the navbar */
+    color: #ffffff; /* White text color for contrast */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for top and bottom */
+    position: relative; /* Position relative for any future adjustments */
+    bottom: 0; /* Stick to the bottom of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+footer p {
+    color: #ffffff; /* Ensure paragraph text in footer is white */
+}
+
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 10px; /* Adjust padding for smaller screens */
+    }
+}
