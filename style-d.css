@@ -1,8 +1,8 @@
 /* Global Styling */
 body {
     font-family: 'Lato', sans-serif; /* Use Lato for body text */
-    background-color: #f9f9f9; /* Light background for better contrast */
-    color: #333; /* Default text color */
+    background-color: #0D1B2A; /* Light background for better contrast */
+    color: #000000; /* Default text color */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -128,7 +128,7 @@ body {
     max-width: 800px; /* Set a max width for the container */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add padding */
-    background-color: #ffffff; /* White background for sections */
+    background-color: #ffd453; /* White background for sections */
     border-radius: 8px; /* Rounded corners for sections */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
@@ -137,34 +137,36 @@ body {
 section {
     padding: 20px; /* Padding for sections */
     margin: 20px 0; /* Margin between sections */
+    border: 1px solid #000000;
     border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for color change and scaling */
-    background-color: #eaa200; /* Default background color for all sections */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for color change, scaling, and shadow */
+    background-color: #feba0f; /* Default background color for all sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.584); /* Add a subtle shadow when not hovered */
 }
 
 
 /* Specific Section Styles */
 #course-overview {
-    background-color: #eaa800; /* Default background color */
+    background-color: #feba0f; /* Default background color */
 }
 
 #data-structures {
-    background-color: #eaa800; /* Default background color */
+    background-color: #feba0f; /* Default background color */
 }
 
 #real-time-applications {
-    background-color: #eaa800; /* Default background color */
+    background-color: #feba0f; /* Default background color */
 }
 #course-overview:hover {
-    background-color: #feba0f; /* Default background color */
+    background-color: #fcc12a; /* Default background color */
 }
 
 #data-structures:hover {
-    background-color: #feba0f; /* Default background color */
+    background-color: #fcc12a; /* Default background color */
 }
 
 #real-time-applications:hover {
-    background-color: #feba0f; /* Default background color */
+    background-color: #fcc12a; /* Default background color */
 }
 /* Hover Effect */
 section:hover {
@@ -175,7 +177,7 @@ section:hover {
 /* Section Headings */
 h2 {
     font-family: 'Playfair Display', serif; /* Use Playfair Display for headings */
-    color: #004d40; /* Darker shade of teal for headings */
+    color: #002132; /* Darker shade of teal for headings */
     margin-bottom: 10px; /* Reduced margin for headings */
     font-size: 30px; /* Set font size for headings */
     font-weight: bold; /* Bold weight */
