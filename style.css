@@ -115,11 +115,13 @@ body {
 .hero h1 {
     color: #ffffff; /* Ensure the main heading is white */
     font-size: 36px; /* Larger font size for the main heading */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add text shadow */
 }
 
 .hero p {
     color: #ffffff; /* Change the color of the paragraph to white */
     font-size: 20px; /* Font size for the paragraph */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add text shadow */
 }
 /* Main Container */
 .container {
