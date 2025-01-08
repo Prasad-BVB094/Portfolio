@@ -1,7 +1,7 @@
 /* Global Styling */
 body {
     font-family: 'Lato', sans-serif; /* Use Lato for body text */
-    background-color: #0D1B2A; /* Light background for better contrast */
+    background-color: #D0E8D0; /* Light background for better contrast */
     color: #000000; /* Default text color */
     margin: 0;
     padding: 0;
@@ -116,11 +116,13 @@ body {
 .hero h1 {
     color: #ffffff; /* Ensure the main heading is white */
     font-size: 36px; /* Larger font size for the main heading */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add text shadow */
 }
 
 .hero p {
     color: #ffffff; /* Change the color of the paragraph to white */
     font-size: 20px; /* Font size for the paragraph */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add text shadow */
 }
 
 /* Main Container */
@@ -128,7 +130,7 @@ body {
     max-width: 800px; /* Set a max width for the container */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add padding */
-    background-color: #ffd453; /* White background for sections */
+    background-color: #C8E6C9; /* White background for sections */
     border-radius: 8px; /* Rounded corners for sections */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
@@ -140,33 +142,33 @@ section {
     border: 1px solid #000000;
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for color change, scaling, and shadow */
-    background-color: #feba0f; /* Default background color for all sections */
+    background-color: #E3F2FD; /* Default background color for all sections */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.584); /* Add a subtle shadow when not hovered */
 }
 
 
 /* Specific Section Styles */
 #course-overview {
-    background-color: #feba0f; /* Default background color */
+    background-color: #E3F2FD; /* Default background color */
 }
 
 #data-structures {
-    background-color: #feba0f; /* Default background color */
+    background-color: #E3F2FD; /* Default background color */
 }
 
 #real-time-applications {
-    background-color: #feba0f; /* Default background color */
+    background-color: #E3F2FD; /* Default background color */
 }
 #course-overview:hover {
-    background-color: #fcc12a; /* Default background color */
+    background-color: #87CEEB; /* Default background color */
 }
 
 #data-structures:hover {
-    background-color: #fcc12a; /* Default background color */
+    background-color: #87CEEB; /* Default background color */
 }
 
 #real-time-applications:hover {
-    background-color: #fcc12a; /* Default background color */
+    background-color: #87CEEB; /* Default background color */
 }
 /* Hover Effect */
 section:hover {
