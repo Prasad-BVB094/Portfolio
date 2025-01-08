@@ -94,7 +94,7 @@ body {
 
 /* Hero Section Text */
 .hero h1 {
-    color: #e0e0e0; /* Ensure the main heading is white */
+    color: #ffffff; /* Ensure the main heading is white */
     font-size: 45px; /* Larger font size for the main heading */
     font-family: 'Playfair Display', serif; /* Set font to Playfair Display */
     text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add text shadow */
