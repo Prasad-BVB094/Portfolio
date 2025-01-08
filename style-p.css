@@ -273,7 +273,7 @@ dd {
 
 /* Links */
 a {
-    color: #ff5722; /* Use a vibrant accent color for links */
+    color: #003e8f; /* Use a vibrant accent color for links */
     text-decoration: none;
     font-weight: 500; /* Medium */
     font-family: 'Lato', sans-serif;
@@ -281,6 +281,8 @@ a {
 
 a:hover {
     text-decoration: underline; /* Underline on hover */
+    font-weight: bold;
+    color: #07006a; /* Light font color */
 }
 
 /* Button Styles */
