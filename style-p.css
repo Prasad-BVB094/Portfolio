@@ -43,6 +43,7 @@ body {
 
 .nav-links a:hover {
     background-color: #003d80; /* Slightly darker hover color */
+    color: #ffffff;
 }
 
 .nav-links a.active {
