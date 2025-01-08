@@ -1,7 +1,7 @@
 /* Global Styling */
 body {
     font-family: 'Lato', sans-serif; /* Use Lato for body text */
-    background-color:  #2c3e50; /* Light background for better contrast */
+    background: linear-gradient(to bottom, #FFF4B3, #ffcb31); /* Gradient from Light Butter Yellow to Golden Yellow */
     color: #333; /* Default text color */
     margin: 0;
     padding: 0;
@@ -112,9 +112,9 @@ body {
     max-width: 800px; /* Set a max width for the container */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add padding */
-    background-color: #34495e; /* White background for sections */
-    border-radius : 15px; /* Rounded corners for sections */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #FFCA28; /* Deep Golden Yellow for sections */
+    border-radius: 15px; /* Rounded corners for sections */
+    box-shadow : 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Base Section Styles */
@@ -122,42 +122,42 @@ section {
     padding: 20px; /* Padding for sections */
     margin: 20px 0; /* Margin between sections */
     border-radius: 15px; /* Rounded corners */
-    border: 1px solid #000000;
+    border: 1px solid #000000; /* Optional border for definition */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for color change and scaling */
-    background-color: #dea300; /* Default background color for all sections */
+    background-color: #ffc800ce; /* Sunshine Yellow as default background color for all sections */
 }
 
 /* Specific Section Styles */
 #urban-diversity {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 #public-transportation {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 #challenges-homelessness {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 #city-planning-insights {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 #global-lessons {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 #urbanization-impacts {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 #need-problem-solving {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 #conclusion {
-    background-color: #dea300; /* Default background color */
+    background-color: #ffc800ce; /* Sunshine Yellow */
 }
 
 /* Hover Effects for Each Section */
@@ -169,7 +169,7 @@ section {
 #urbanization-impacts:hover,
 #need-problem-solving:hover,
 #conclusion:hover {
-    background-color: #ffbf0e; /* Change background color on hover */
+    background-color: #FF8F00; /* Amber Yellow on hover */
     transform: scale(1.02); /* Enlarge the section slightly on hover */
     box-shadow: 0 4px 15px rgb(0, 0, 0); /* Add shadow for depth */
     transition: transform 0.3s ease; /* Smooth transition for scaling */
@@ -178,7 +178,7 @@ section {
 /* PDF Viewer Section */
 #pdf-viewer, #pdf-download {
     padding: 20px; /* Add padding around the sections */
-    background-color: #dea300; /* White background for the viewer */
+    background-color: #ffc800ce; /* Sunshine Yellow for the viewer */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin: 20px 0; /* Margin for spacing */
@@ -230,14 +230,14 @@ section {
 #pdf-viewer:hover {
     transform: scale(1.005); /* Enlarge the section slightly on hover */
     box-shadow: 0 4px 15px rgb(0, 0, 0); /* Add shadow for depth */
-    background-color: #ffbf0e; /* Optional: Change background color on hover */
+    background-color: #FF8F00; /* Optional: Change background color on hover */
 }
 
 /* Hover Effect for Download Section */
 #pdf-download:hover {
     transform: scale(1.005); /* Enlarge the section slightly on hover */
     box-shadow: 0 4px 15px rgb(0, 0, 0); /* Add shadow for depth */
-    background-color: #ffbf0e; /* Darker shade on hover */
+    background-color: #FF8F00; /* Darker shade on hover */
 }
 
 /* Section Headings */
