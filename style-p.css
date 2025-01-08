@@ -64,7 +64,8 @@ body {
 }
 
 .nav-links li:hover .dropdown {
-    display: block; /* Show dropdown on hover */
+    display: block;
+    color: #ffffff; /* Show dropdown on hover */
 }
 
 .dropdown li {
@@ -79,7 +80,8 @@ body {
 }
 
 .dropdown a:hover {
-    background-color: #003d80; /* Hover color for dropdown items */
+    background-color: #003d80;
+    color: #ffffff; /* Hover color for dropdown items */
 }
 
 /* Hero Section */
