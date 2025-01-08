@@ -1,7 +1,7 @@
 /* Global Styling */
 body {
     font-family: 'Lato', sans-serif; /* Use Lato for body text */
-    background-color: #f9f9f9; /* Light background for better contrast */
+    background-color: #41b6ff; /* Light background for better contrast */
     color: #000000; /* Default text color */
     margin: 0;
     padding: 0;
@@ -129,34 +129,63 @@ body {
     max-width: 800px; /* Set a max width for the container */
     margin: 20px auto; /* Center the container with margin */
     padding: 20px; /* Add padding */
-    background-color: #ffffff; /* White background for sections */
+    background-color: #80f2ff83; /* White background for sections */
     border-radius: 8px; /* Rounded corners for sections */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 10px rgb(0, 0, 0); /* Subtle shadow for depth */
 }
 
 /* Collapsible Section Styles */
 .collapsible {
     margin: 20px 0; /* Margin to separate sections */
-    border: 1px solid #707070; /* Border for collapsible sections */
+    border: 1px solid #000000; /* Border for collapsible sections */
     border-radius: 5px; /* Rounded corners for collapsible sections */
-    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.533); /* Add shadow effect */
 }
 
 .question {
-    background-color: #f1f1f1; /* Light grey background for questions */
+    position: relative; /* Position relative to allow absolute positioning of the arrow */
+    background-color: #fbee77; /* Light grey background for questions */
     padding: 15px; /* Padding for question */
     cursor: pointer; /* Pointer cursor on hover */
     margin: 0; /* Remove margin */
-    border: 1px solid #3b3b3b; /* Remove border */
+    border: 1px solid #000000; /* Remove border */
     border-radius: 5px;
     text-align: left; /* Align text to the left */
-    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    padding-right: 30px; /* Add padding to the right for the arrow */
 }
 
+/* Arrow for the question */
+.question::after {
+    content: ''; /* No text content */
+    position: absolute; /* Position it absolutely */
+    right: 10px; /* Position it 10px from the right */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 0; /* No width */
+    height: 0; /* No height */
+    border-left: 5px solid transparent; /* Left border for triangle */
+    border-right: 5px solid transparent; /* Right border for triangle */
+    border-top: 8px solid #000; /* Top border for downward arrow */
+}
+
+/* Change arrow color on hover */
+.question:hover::after {
+    border-top-color: #000000; /* Change color on hover (example color) */
+}
+
+/* Hover effect for question */
 .question:hover,
 .question.active {
-    background-color: #ebc001; /* Change background color on hover and when active */
+    background-color: #ffd82c; /* Change background color on hover and when active */
     transform: scale(1.05); /* Slightly enlarge the question section */
+    box-shadow: 0 4px 16px rgba(255, 249, 86, 0.715); /* Shadow for enlarged section */
+}
+
+/* Remove shadow when not hovering */
+.question:not(:hover) {
+    box-shadow: none; /* Remove shadow when not hovering */
 }
 
 .answer {
@@ -173,7 +202,7 @@ body {
 /* Section Headings */
 h2 {
     font-family: 'Playfair Display', serif; /* Use Playfair Display for headings */
-    color: #004d40; /* Darker shade of teal for headings */
+    color: #000000; /* Darker shade of teal for headings */
     margin-bottom: 10px; /* Margin for spacing */
     font-size: 30px; /* Set font size for headings */
     font-weight: bold; /* Bold weight */
