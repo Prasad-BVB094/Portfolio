@@ -1,7 +1,7 @@
 /* Global Styling */
 body {
     font-family: 'Lato', sans-serif; /* Use Lato for body text */
-    background-color: #cdcdcd; /* Light background for better contrast */
+    background-color: #45c9fe; /* Light background for better contrast */
     color: #000000; /* Default text color */
     margin: 0;
     padding: 0;
@@ -122,8 +122,9 @@ section {
     padding: 20px; /* Padding for sections */
     margin: 20px 0; /* Margin between sections */
     border-radius: 15px; /* Rounded corners */
+    border: 1px solid #000000;
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for color change and scaling */
-    background-color: #32b0ff; /* Default background color for all sections */
+    background-color: #28aba9; /* Default background color for all sections */
 }
 
 /* Specific Section Styles */
@@ -131,14 +132,15 @@ section {
 #course-overview {
     text-align: center; /* Center-align text */
     padding: 20px; /* Optional: Add padding for better spacing */
-    background-color: #32b0ff; /* Background color for the section */
+    border: 1px solid #000000;
+    background-color: #bceffe; /* Background color for the section */
     border-radius: 15px; /* Rounded corners */
     margin: 20px 0; /* Margin for spacing */
 }
 
 /* Hover Effects for Each Section */
 #course-overview:hover {
-    background-color: #abb5ff; /* Change background color on hover */
+    background-color: #43d5fe; /* Change background color on hover */
     transform: scale(1.02); /* Enlarge the section slightly on hover */
     box-shadow: 0 4px 15px rgb(0, 0, 0); /* Add shadow for depth */
 }
@@ -150,9 +152,10 @@ section {
 
 .pdf-viewer, .pdf-download {
     padding: 20px; /* Add padding around the sections */
-    background-color: #ffffff; /* White background for the viewer */
+    background-color: #bceffe; /* White background for the viewer */
+    border: 1px solid #000000;
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 10px rgba(39, 151, 255, 0.293); /* Subtle shadow for depth */
     text-align: center; /* Center the content */
 }
 
@@ -162,7 +165,7 @@ section {
     padding: 10px 15px; /* Button padding */
     background-color: #110096; /* Button color */
     color: white; /* Button text color */
-    border: none; /* Remove border */
+    border: 1px solid #000000; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size */
@@ -170,8 +173,8 @@ section {
 }
 
 .pdf-viewer button:hover {
-    background-color: #0035bc; /* Darker shade on hover */
-    transform: scale(1.05); /* Enlarge the button slightly on hover */
+    background-color: #215ffd; /* Darker shade on hover */
+    transform: scale(1.1); /* Enlarge the button slightly on hover */
 }
 
 /* Download Button */
@@ -179,7 +182,7 @@ section {
     padding: 10px 15px; /* Button padding */
     background-color: #008109; /* Button color */
     color: white; /* Button text color */
-    border: none; /* Remove border */
+    border: 1px solid #000000;/* Remove border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size */
@@ -187,23 +190,37 @@ section {
 }
 
 .download-btn:hover {
-    background-color: #00940a; /* Darker shade on hover */
-    transform: scale(1.05); /* Enlarge the button slightly on hover */
+    background-color: #03be0f; /* Darker shade on hover */
+    transform: scale(1.1); /* Enlarge the button slightly on hover */
 }
 .cpp-section {
     text-align: center; /* Center-align text and button */
     margin: 20px 0; /* Margin for spacing */
+    border: 1px solid #000000;
     padding: 20px; /* Optional: Add padding for better spacing */
-    background-color: #ffffff; /* White background for the section */
+    background-color: #76cfff; /* White background for the section */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 /* Hover Effect for PDF Viewer Section */
 .pdf-viewer:hover {
     transform: scale(1.005); /* Enlarge the section slightly on hover */
-    box-shadow: 0 4px 15px rgb(0, 0, 0); /* Add shadow for depth */
+    box-shadow: 0 4px 15px rgba(39, 151, 255, 0.293); /* Add shadow for depth */
+    background-color: #00bdd6;
+    border-radius: 15px;
 }
-
+.pdf-download:hover{
+    box-shadow: 0 4px 15px rgba(39, 151, 255, 0.293); /* Add shadow for depth */
+    background-color: #27c0fdb7; /* Optional: Change background color on hover */
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+.cpp-section:hover{
+    box-shadow: 0 4px 15px rgba(39, 151, 255, 0.293); /* Add shadow for depth */
+    background-color: #3eaba2; /* Optional: Change background color on hover */
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
 /* Section Headings */
 h2 {
     font-family: 'Playfair Display', serif; /* Use Playfair Display for headings */
